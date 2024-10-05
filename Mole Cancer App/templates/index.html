@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mole Classification</title>
+    <link rel="stylesheet" href="../static/styling.css">
+</head>
+<body>
+    <div class="container">
+        <h1><strong>Cancerous Mole Detector</strong></h1>
+        <h2>Upload a picture here</h2>
+        <form method="POST" enctype="multipart/form-data"> <!-- Removed the comma -->
+            <input type="file" name="file" accept="image/*" required>
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <h4><strong>Please note that this prediction may not always produce accurate results. If you have any concerns about your health, contact a doctor. For your safety, do not rely on this AI.</strong></h4>
+        <h4>If your results came back as <strong>inconclusive</strong>, this means that the model's accuracy was not high enough to be deemed helpful.</h4>
+        <h4>In such a scenario, it is greatly recommended to check with a doctor.</h4>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <h3>Created by Celil Selcuk</h3>
+        <h4>Designed for an Arkwright scholarship project</h4>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <a href="https://github.com/celilselcuk" target="_blank">
+            <img id="src1" src="{{ url_for('static', filename='logos/github.png') }}" class='logo'>
+        </a>
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank">
+            <img id="src2" src="{{ url_for('static', filename='logos/gmail.png') }}" class='logo'>
+        </a>
+        <a href="https://outlook.office365.com/mail/" target="_blank">
+            <img id="src3" src="{{ url_for('static', filename='logos/outlook.png') }}" class='logo'>
+        </a>
+    </div>
+</body>
+</html>
