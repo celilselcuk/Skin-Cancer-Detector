@@ -78,7 +78,4 @@ def predict(filename):
     return render_template('results.html', prediction=confidence, decision=decision, malignant_pred=malignant_pred, benign_pred=benign_pred, filename=filename)
 
 if __name__ == '__main__':
-    #public_url = ngrok.connect(name = 'flask').public_url
-    #print(f'* Public ngrok url --> {public_url} *')
     app.run(debug=True)
-    #app.run()

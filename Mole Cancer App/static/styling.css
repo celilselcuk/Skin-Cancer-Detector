@@ -6,9 +6,9 @@ body {
 }
 
 .logo {
-    margin: 0 20px;  /* Space between the logos */
-    width: 50px;     /* Logo width */
-    height: auto;    /* Maintain aspect ratio */
+    margin: 0 20px;
+    width: 50px;
+    height: auto;
 }
 
 .container {
@@ -41,7 +41,7 @@ button:hover {
     background-color: #0a3d0c;
 }
 
-/* Remove text decoration from links */
+/* created to avoid the gmail display bug */
 a {
-    text-decoration: none; /* Ensures no underline or dots appear */
+    text-decoration: none;
 }
